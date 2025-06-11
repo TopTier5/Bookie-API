@@ -19,6 +19,10 @@ const bookSchema = new Schema({
         type: String,
     },
 
+    description: {
+        type: String,
+    },
+
     category: {
         type: String,
         enum: ["fiction", "history", "romance", "academic", "religious", "personal development"]
