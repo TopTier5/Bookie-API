@@ -16,11 +16,11 @@ const bookSchema = new Schema({
         required: true
     },
     image: {
-        type: String,
+        type: string,
     },
 
     category: {
-        type: String,
+        type: string,
         enum: ["fiction", "history", "romance", "academic", "religious", "personal development"]
     },
 

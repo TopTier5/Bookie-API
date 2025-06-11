@@ -29,17 +29,17 @@ export const bookSchema = Joi.object({
             'string.pattern.base': 'ISBN must be a valid ISBN-10 format.'
         }),
 
-    publicationYear: Joi.number()
-        .integer()
-        .min(1000) // Assuming publication year is at least 1000
-        .max(new Date().getFullYear() + 5) // Assuming max is current year + a few years for future publications
-        .optional()
-        .messages({
-            'number.base': 'Publication year must be a number.',
-            'number.integer': 'Publication year must be an integer.',
-            'number.min': 'Publication year cannot be before {{#limit}}.',
-            'number.max': 'Publication year cannot be in the far future.'
-        }),
+    publicationYear: Joi.string(),
+        // .integer()
+        // .min(1000) // Assuming publication year is at least 1000
+        // .max(new Date().getFullYear() + 5) // Assuming max is current year + a few years for future publications
+        // .optional()
+        // .messages({
+        //     'number.base': 'Publication year must be a number.',
+        //     'number.integer': 'Publication year must be an integer.',
+        //     'number.min': 'Publication year cannot be before {{#limit}}.',
+        //     'number.max': 'Publication year cannot be in the far future.'
+        // }),
 
     genre: Joi.string()
         .valid("fiction", "history", "science", "romance", "fantasy", "programming", "personal development")
