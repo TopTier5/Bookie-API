@@ -3,7 +3,6 @@ import express from "express";
 import { bookRouter } from "./Routes/bookie_routes.js";
 import mongoose from "mongoose";
 import "dotenv/config"
-import { bookRouter } from "./Routes/bookie_routes.js";
 import cors from 'cors'
 
 const app = express();
