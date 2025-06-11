@@ -12,15 +12,15 @@ const bookSchema = new Schema({
     },
 
     publicationYear: {
-        type: string,
+        type: String,
         required: true
     },
     image: {
-        type: string,
+        type: String,
     },
 
     category: {
-        type: string,
+        type: String,
         enum: ["fiction", "history", "romance", "academic", "religious", "personal development"]
     },
 
