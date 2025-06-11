@@ -17,12 +17,12 @@ const bookSchema = new Schema({
     },
     image: {
         type: String,
-    }
+    },
 
     category: {
         type: String,
         enum: ["fiction", "history", "romance", "academic", "religious"]
-    }
+    },
 
 }, {timestamps: true})
 

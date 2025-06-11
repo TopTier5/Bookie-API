@@ -33,7 +33,7 @@ export const getBook = async (req, res) => {
 
     // const book = await Book.find();
     // res.send(book);
-}
+
 export const getOneBook = async (req, res) => {
     try {
         const { id } = req.params;
@@ -67,7 +67,7 @@ export const getOneBook = async (req, res) => {
     } catch (error) {
          return res.status(500).json({
                 success: false,
-                message: "Failed to retrieve book. An unexpected error occurred."
+                message: "Failed to retrieve book. An unexpected error occurred.",
                 error: error.message
             });
     }
