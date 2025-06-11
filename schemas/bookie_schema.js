@@ -42,7 +42,7 @@ export const bookSchema = Joi.object({
         }),
 
     genre: Joi.string()
-        .valid("fiction", "history", "science", "romance", "fantasy", "programming")
+        .valid("fiction", "history", "science", "romance", "fantasy", "programming", "personal development")
         .optional()
         .messages({
             'any.only': 'Genre must be one of "fiction", "programming", "history", "science", "romance", or "fantasy".'

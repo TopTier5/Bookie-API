@@ -12,7 +12,7 @@ const bookSchema = new Schema({
     },
 
     publicationYear: {
-        type: Date,
+        type: string,
         required: true
     },
     image: {
@@ -21,7 +21,7 @@ const bookSchema = new Schema({
 
     category: {
         type: String,
-        enum: ["fiction", "history", "romance", "academic", "religious"]
+        enum: ["fiction", "history", "romance", "academic", "religious", "personal development"]
     },
 
 }, {timestamps: true})
