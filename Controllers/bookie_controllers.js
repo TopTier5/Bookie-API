@@ -7,17 +7,17 @@ export const getBook = async (req, res) => {
     try {
         const book = await Book.find();
         //  no books found
-        if (!books) {
+        if (!book) {
             return res.status(404).json({
                 success: false,
-                message: 'No bboks found!'
+                message: 'No books found!'
             })
         }
 
         //  if succeeded
         return res.status(200).json({
             success: true,
-            data: books,
+            data: book,
             message: 'Books retrieved Succesfully.'
         })
 
